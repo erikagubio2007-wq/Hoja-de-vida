@@ -1,66 +1,132 @@
-body {
+body{
     background-color: rgb(217, 119, 236);
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-/*Navegación*/
-nav {
+/* NAVEGACION */
+.nav{
+     
     background: black;
     padding: 10px;
     text-align: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
 }
-nav a {
+.nav a{
+  
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-/*Encabezado*/
-header {
+/* ENCABEZADO */
+.header{
     text-align: center;
-    padding: 20px;
-    background: purple;
+    padding: 30px;
+    background: linear-gradient(90deg, purple, violet);
     color: white;
 }
-header img {
+.foto{
     width: 120px;
-    border: 3px solid white;
-    margin-top: 10px;
+    
+    margin-top: 15px;
+    border: 4px solid white;
 }
 
-/*Títulos*/
-h1 {
+/* TITULOS */
+.titulo{
     text-align: center;
     color: aquamarine;
     margin-top: 20px;
+    padding: 30px;
 }
-h2 {
-    color: purple;
+.subtitulo{
+    border-left: 6px solid purple;
+    padding-left: 10px;
     margin: 20px;
+    color: purple;
 }
 
-/*Secciones con flex*/
-section {
+/* CONTENEDOR */
+.contenedor{
     display: flex;
     justify-content: space-around;
-    margin: 20px;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-section div {
-    width: 45%;
+    margin: 40px;
 }
 
-/* Botón*/
-div a {
-    display: inline-block;
+/* TARJETAS */
+.card{
+    background: white;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+.datos{ width: 35%; }
+.descripcion{ width: 50%; }
+
+/* BOTON */
+.boton{
+    text-align: center;
+    margin: 30px;
+}
+.boton a{
     text-decoration: none;
-    background: purple;
+    background: linear-gradient(90deg, purple, violet);
     color: white;
-    padding: 10px 20px;
-    font-weight: bold;
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+/* REDES */
+.redes{
+    text-align: center;
+    width: 50%;
     margin: 20px auto;
+}
+
+
+.habilidades{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.barra{
+    background: #ddd;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progreso{
+    height: 25px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Porcentajes */
+.html{ width: 90%; background: purple; }
+.css{ width: 80%; background: violet; }
+.js{ width: 60%; background: indigo; }
+.git{ width: 70%; background: darkmagenta; }
+
+
+/* PROYECTOS */
+.proyectos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.proyecto{
+    width: 28%;
+    margin-bottom: 20px;
+    text-align: center;
 }

@@ -2,63 +2,105 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida</title>
-    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Fuente profesional -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="nav">
         <a href="index.html">Inicio</a>
         <a href="contacto.html">Redes</a>
     </nav>
 
-    <header>
+    <header class="header">
         <h1>Erika Esperanza Chamorro Gubio</h1>
         <p>Estudiante de Desarrollo de Software | Desarrolladora Web</p>
-        <img src="img/foto.jpg">
+        <img src="img/foto.jpg" class="foto">
     </header>
 
-    <h2>Información Personal</h2>
-    <section>
-        <div>
-            <p><strong>Edad:</strong> 18</p>
-            <p><strong>Dirección:</strong> San Antonio de Pichincha</p>
-            <p><strong>Teléfono:</strong> 0980831705</p>
-            <p><strong>Correo:</strong> erikagubio2007gmail.com</p>
-            <p><strong>Idiomas:</strong> Español, Inglés A2</p>
-        </div>
-        <div>
-            <p>Desarrolladora web con conocimientos en diseño, instalación, pruebas y mantenimiento de software.</p>
-            <img src="img/WhatsApp Image 2026-04-01 at 17.47.16 (1).jpeg" width="300">
-        </div>
-    </section>
+    <h2 class="subtitulo">Información Personal</h2>
 
-    <h2>Habilidades</h2>
-    <section>
-        <p>HTML - 90%</p>
-        <p>CSS - 80%</p>
-        <p>JavaScript - 60%</p>
-        <p>Git y GitHub - 70%</p>
-    </section>
+    <div class="contenedor">
 
-    <h2>Proyectos</h2>
-    <section>
-        <div>
-            <h3>Página Hoja de Vida</h3>
-            <p>Proyecto web realizado con HTML y CSS.</p>
-        </div>
-        <div>
-            <h3>Sitio Web con Nginx en Ubuntu</h3>
-            <p>Configuración de servidor Nginx y despliegue de páginas web en Linux.</p>
-        </div>
-        <div>
-            <h3>Prácticas con GitHub</h3>
-            <p>Control de versiones y manejo de repositorios.</p>
-        </div>
-    </section>
+        <div class="datos card">
+            <h3>Edad:</h3>
+            <p>18</p>
 
-    <div>
+            <h3>Dirección:</h3>
+            <p>San Antonio de Pichincha</p>
+
+            <h3>Teléfono:</h3>
+            <p>0980831705</p>
+
+            <h3>Correo:</h3>
+            <p>erikagubio2007gmail.com</p>
+
+            <h3>Idiomas:</h3>
+            <p>Español, Inglés A2</p>
+        </div>
+
+        <div class="descripcion card">
+            <p>
+                Desarrolladora web con conocimientos en diseño, instalación,
+                pruebas y mantenimiento de software. Capaz de trabajar en equipo
+                y desarrollar proyectos de manera autónoma.
+            </p>
+            <div><img src="img/WhatsApp Image 2026-04-01 at 17.47.16 (1).jpeg" alt="servidor"width="400"height="300"></div>
+        </div>
+
+    </div>
+<h2 class="subtitulo">Habilidades</h2>
+
+<div class="habilidades card">
+
+    <p>HTML</p>
+    <div class="barra">
+        <div class="progreso html">90%</div>
+    </div>
+
+    <p>CSS</p>
+    <div class="barra">
+        <div class="progreso css">80%</div>
+    </div>
+
+    <p>JavaScript</p>
+    <div class="barra">
+        <div class="progreso js">60%</div>
+    </div>
+
+    <p>Git y GitHub</p>
+    <div class="barra">
+        <div class="progreso git">70%</div>
+    </div>
+
+</div>
+
+
+<h2 class="subtitulo">Proyectos</h2>
+
+<div class="proyectos">
+
+    <div class="proyecto card">
+        <h3>Página Hoja de Vida</h3>
+        <p>Proyecto web realizado con HTML y CSS donde presento mi información personal.</p>
+    </div>
+
+    <div class="proyecto card">
+        <h3>Sitio Web con Nginx en Ubuntu</h3>
+        <p>Configuración de servidor Nginx y despliegue de páginas web en Linux.</p>
+    </div>
+
+    <div class="proyecto card">
+        <h3>Prácticas con GitHub</h3>
+        <p>Control de versiones y manejo de repositorios para proyectos de desarrollo.</p>
+    </div>
+
+</div>
+    <div class="boton">
         <a href="contacto.html">Ir a redes sociales</a>
     </div>
 
