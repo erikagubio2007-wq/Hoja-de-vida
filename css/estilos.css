@@ -1,125 +1,66 @@
-body{
+body {
     background-color: rgb(217, 119, 236);
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 
-/* NAVEGACION */
-.nav{
+/*Navegación*/
+nav {
     background: black;
     padding: 10px;
     text-align: center;
 }
-.nav a{
+nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-/* ENCABEZADO */
-.header{
+/*Encabezado*/
+header {
     text-align: center;
-    padding: 30px;
-    background: linear-gradient(90deg, purple, violet);
+    padding: 20px;
+    background: purple;
     color: white;
 }
-.foto{
+header img {
     width: 120px;
-    
-    margin-top: 15px;
-    border: 4px solid white;
+    border: 3px solid white;
+    margin-top: 10px;
 }
 
-/* TITULOS */
-.titulo{
+/*Títulos*/
+h1 {
     text-align: center;
     color: aquamarine;
     margin-top: 20px;
 }
-.subtitulo{
-    border-left: 6px solid purple;
-    padding-left: 10px;
-    margin: 20px;
+h2 {
     color: purple;
+    margin: 20px;
 }
 
-/* CONTENEDOR */
-.contenedor{
+/*Secciones con flex*/
+section {
     display: flex;
     justify-content: space-around;
-    margin: 40px;
-}
-
-/* TARJETAS */
-.card{
+    margin: 20px;
     background: white;
-    padding: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+section div {
+    width: 45%;
 }
 
-.datos{ width: 35%; }
-.descripcion{ width: 50%; }
-
-/* BOTON */
-.boton{
-    text-align: center;
-    margin: 30px;
-}
-.boton a{
+/* Botón*/
+div a {
+    display: inline-block;
     text-decoration: none;
-    background: linear-gradient(90deg, purple, violet);
+    background: purple;
     color: white;
-    padding: 12px 25px;
-    font-weight: 600;
-}
-
-/* REDES */
-.redes{
-    text-align: center;
-    width: 50%;
-    margin: 40px auto;
-}
-
-
-.habilidades{
-    width: 80%;
-    margin: 30px auto;
-}
-
-.barra{
-    background: #ddd;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-
-.progreso{
-    height: 25px;
-    color: white;
-    text-align: center;
-    line-height: 25px;
-    font-size: 14px;
+    padding: 10px 20px;
     font-weight: bold;
-}
-
-/* Porcentajes */
-.html{ width: 90%; background: purple; }
-.css{ width: 80%; background: violet; }
-.js{ width: 60%; background: indigo; }
-.git{ width: 70%; background: darkmagenta; }
-
-
-/* PROYECTOS */
-.proyectos{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 40px;
-}
-
-.proyecto{
-    width: 28%;
-    margin-bottom: 20px;
-    text-align: center;
+    margin: 20px auto;
 }
